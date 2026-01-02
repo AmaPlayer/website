@@ -1,206 +1,356 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>AmaPlayer</title>
-		<meta charset="utf-8">
-		<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="assets/css/main.css">
-	</head>
-	<body>
+<!DOCTYPE html>
+<html lang="en">
 
-		<!-- Header -->
-			<header id="header" class="alt">
-				<div class="logo"><a href="index.html">Hello <span>by AmaPlayer</span></a></div>
-				<a href="#menu">Menu</a>
-			</header>
-			
-			<!-- Nav -->
-			 <nav id="menu">
-				<ul class="links">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="coaches.html">View Coaches</a></li>
-					<li><a href="organizations.html">View Organizations</a></li>
-				</ul> 
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AmaPlayer - The Digital Arena</title>
+	<link rel="stylesheet" href="assets/css/main.css">
+	<!-- FontAwesome (Legacy support for icons, can be replaced later) -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+	<!-- Glass Header -->
+	<header class="main-header flex-center">
+		<div class="container flex-between">
+			<div class="logo">
+				<a href="index.html"
+					style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 900; color: var(--color-white);">
+					AMA<span style="color: var(--color-primary);">PLAYER</span>
+				</a>
+			</div>
+			<nav class="nav-links desktop-only" style="display: flex; gap: 2rem;">
+				<a href="index.html" class="active">Home</a>
+				<a href="coaches.html">Coaches</a>
+				<a href="organizations.html">Organizations</a>
+				<a href="#talent">Talent</a>
 			</nav>
-				
-				<!-- Banner -->
-				 
-				<section class="banner full"><article><img src="images/slide01.jpg" alt="" width="1440" height="961"><div class="inner">
-						<header><p>We Welcome you to <a href="https://templated.co">PLatform</a></p>
-							<h2>AmaPlayer</h2>
-							<div class="hero-buttons">
-								<a href="#explore" class="button special">Explore</a>
-								<a href="#" class="button alt">Login</a>
-							</div>
-						</header></div>
-				</article>
-				
-				<article><img src="./images/stadium.jpg" alt="" width="1440" height="961"><div class="inner">
-						<header>
-							<h2>Where Talent Meets Opportunity</h2>
-						</header></div>
-				</article>
-				
-				<article data-position="center bottom"><img src="images/action.jpg" alt="" width="1440" height="962"><div class="inner">
-						<header><p>Your Journey, Our Stage.</p>
-							<h2>Let's Conqueror Together</h2>
-						</header></div>
-				</article>
-				</section>
-                
-                <!-- One -->
-                <section id="one" class="wrapper style2">
-                    <div class="inner">
-					<div class="grid-style">
+			<div class="auth-buttons flex" style="gap: 1rem;">
+				<!-- Login Removed for Pre-Launch -->
+				<a href="#" class="btn btn-primary" style="padding: 0.5rem 1.5rem; font-size: 0.8rem;">Join Waitlist</a>
+			</div>
+		</div>
+	</header>
 
-						<div>
-							<div class="box">
-								<div class="image fit">
-									<img src="images/weight.jpg" alt="" width="300" height="50"></div>
-								<div class="content">
-									<header class="align-center"><p>How I Got Discovered with Talent Hunt</p>
-										<h2>Sports-Only Community Forum </h2>
-									</header><p> Success in sports is built on consistent training, discipline, and the right opportunities. At AmaPlayer, we connect aspiring athletes with the resources they need to excel. Whether you're a player looking to showcase your talent or a coach seeking promising athletes, our platform bridges the gap between potential and opportunity. Share your journey, track your progress, and get discovered by organizations looking for talent just like yours.</p>
-									<footer class="align-center"><a href="#" class="button alt">Learn More</a>
-									</footer></div>
-							</div>
-						</div>	
+	<!-- Electric Hero Section -->
+	<section class="hero-wrapper">
+		<!-- Background Overlay (Simulated Video/Image) -->
+		<div
+			style="position: absolute; top:0; left:0; width:100%; height:100%; background: url('images/slide01.jpg') center/cover no-repeat; opacity: 0.4; z-index: 0;">
+		</div>
+		<div
+			style="position: absolute; top:0; left:0; width:100%; height:100%; background: linear-gradient(180deg, rgba(10,25,47,0.3) 0%, var(--color-bg-dark) 100%); z-index: 1;">
+		</div>
 
+		<div class="container hero-content">
+			<div
+				style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 4rem; width: 100%;">
+				<!-- Left Column: Text -->
+				<div style="flex: 1; min-width: 300px;">
+					<h4 class="reveal-on-scroll"
+						style="color: var(--color-primary); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 1rem;">
+						Coming Soon - End of Month</h4>
+					<h1 class="reveal-on-scroll stagger-1">The Future of Sports <br><span class="hero-highlight">Arrives
+							Soon</span></h1>
+					<p class="reveal-on-scroll stagger-2"
+						style="font-size: 1.2rem; max-width: 600px; color: #e6f1ff; margin-bottom: 2.5rem;">
+						The ultimate digital arena for athletes to showcase skills, connect with top scouts, and level
+						up their
+						career.
+						<br><span style="color: var(--color-secondary); font-size: 0.9rem;">Join 10,000+ athletes on the
+							waitlist.</span>
+					</p>
+					<div class="flex reveal-on-scroll stagger-3">
+						<a href="#" class="btn btn-primary animate-pulse">Join Waitlist</a>
+						<a href="coaches.html" class="btn btn-outline">Preview Coaches</a>
 					</div>
 				</div>
-			</section>
-			
-			<!-- Two -->
-			 
-			<section id="two" class="wrapper style3">
-    <div class="inner">
-        <header class="align-center">
-            <h2>Daily & Weekly Challenges</h2>
-            <p>Compete, improve, and win exciting rewards!</p>
-        </header>
-        <div class="challenges-container">
-            <div class="challenge-card">
-                <div class="challenge-icon">
-                    <i class="fa fa-trophy"></i>
-                </div>
-                <h3>Daily Challenges</h3>
-                <p>Test your skills with new challenges every day and win exclusive sport kits and gear.</p>
-                <a href="#" class="button alt">Join Today's Challenge</a>
-            </div>
-            <div class="challenge-card">
-                <div class="challenge-icon">
-                    <i class="fa fa-star"></i>
-                </div>
-                <h3>Weekly Tournaments</h3>
-                <p>Compete against athletes nationwide in our weekly tournaments with amazing prizes.</p>
-                <a href="#" class="button alt">View Leaderboard</a>
-            </div>
-        </div>
-    </div>
-</section>
-			
-			<!-- Three -->
-			 
-			<section id="three" class="wrapper style2"><div class="inner">
-					<header class="align-center"><p class="special">Nam vel ante sit amet libero scelerisque facilisis eleifend vitae urna</p>
-						<h2>How I Got Discovered With AmaPlayer</h2>
-					</header>
-					<div class="process-cards">
-						<div class="process-card">
-							<div class="card-image">
-								<img src="images/upload.jpg" alt="Upload">
-							</div>
-							<div class="card-content">
-								<h3>UPLOAD</h3>
-								<p>Share your best moments, stats, & achievements</p>
-							</div>
-						</div>
-						<div class="process-arrow">→</div>
-						<div class="process-card">
-							<div class="card-image">
-								<img src="images/connect.jpg" alt="Connect">
-							</div>
-							<div class="card-content">
-								<h3>CONNECT</h3>
-								<p>Network with selectors, coaches, and fellow athletes</p>
-							</div>
-						</div>
-						<div class="process-arrow">→</div>
-						<div class="process-card">
-							<div class="card-image">
-								<img src="images/medals.jpg" alt="Get Recognized">
-							</div>
-							<div class="card-content">
-								<h3>GET RECOGNIZED</h3>
-								<p>Get scouted by selectors & receive trial invitations</p>
-							</div>
-						</div>
-					</div>
-					<div class="process-footer">
-						<p>Motivated? Join Talent Hunt Today!</p>
-					</div>
-				</div>
-			</section>
 
-			<!-- Explore the Env Section -->
-			<section id="explore" class="wrapper style1">
-				<div class="inner">
-					<header class="align-center">
-						<h2>Explore the Environment</h2>
-						<p>Discover your path in the sports community - whether you're an athlete, coach, or organization</p>
-					</header>
-					<div class="explore-cards">
-						<div class="explore-card athlete-card">
-							<div class="card-image-bg" style="background-image: url('images/athlete.jpg');">
-								<div class="card-overlay"></div>
-							</div>
-							<div class="card-content">
-								<h3>Explore Athletes</h3>
-								<p>Browse inspiring profiles, achievements, and highlight reels from athletes across all sports. Connect, compete, and get noticed! Dive into a world of talent ready to be recognized.</p>
-								<a href="#" class="button special">See Athletes</a>
-							</div>
+				<!-- Right Column: Timer -->
+				<div class="reveal-on-scroll stagger-2" id="countdown-timer"
+					style="flex: 0 0 auto; display: flex; flex-direction: column; gap: 1rem; background: rgba(10, 25, 47, 0.85); padding: 2rem; border: 1px solid var(--color-primary); border-radius: 16px; backdrop-filter: blur(10px); box-shadow: 0 0 30px rgba(204,255,0,0.15);">
+					<div style="text-align: center; margin-bottom: 0.5rem;">
+						<h5 style="color: var(--color-white); letter-spacing: 1px;">LAUNCHING IN</h5>
+					</div>
+					<div style="display: flex; gap: 1.5rem; align-items: center;">
+						<div class="text-center">
+							<div id="days"
+								style="font-size: 3.5rem; font-weight: 900; color: var(--color-primary); line-height: 1; text-shadow: 0 0 20px rgba(204,255,0,0.4);">
+								00</div>
+							<div
+								style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: var(--color-white); margin-top: 0.5rem;">
+								Days</div>
 						</div>
-						<div class="explore-card coach-card">
-							<div class="card-image-bg" style="background-image: url('images/coaches.jpg');">
-								<div class="card-overlay"></div>
-							</div>
-							<div class="card-content">
-								<h3>Meet the Coaches</h3>
-								<p>Discover top coaches, mentors, and trainers driving athlete progress. Find coaching tips, connect for guidance, or partner for professional development—all inside a supportive sports network.</p>
-								<a href="coaches.html" class="button special">View Coaches</a>
-							</div>
+						<div
+							style="font-size: 2.5rem; font-weight: 300; color: rgba(255,255,255,0.2); margin-top: -1.5rem;">
+							:</div>
+						<div class="text-center">
+							<div id="hours"
+								style="font-size: 3.5rem; font-weight: 900; color: var(--color-primary); line-height: 1; text-shadow: 0 0 20px rgba(204,255,0,0.4);">
+								00</div>
+							<div
+								style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: var(--color-white); margin-top: 0.5rem;">
+								Hours</div>
 						</div>
-						<div class="explore-card organization-card">
-							<div class="card-image-bg" style="background-image: url('images/organisation.jpg');">
-								<div class="card-overlay"></div>
-							</div>
-							<div class="card-content">
-								<h3>Join Clubs & Organizations</h3>
-								<p>Explore sports clubs, academies, and organizations scouting new talent and hosting competitions. Find your local club, stay updated on events, or get recruited for the next big opportunity.</p>
-								<a href="organizations.html" class="button special">Explore Clubs</a>
-							</div>
+						<div
+							style="font-size: 2.5rem; font-weight: 300; color: rgba(255,255,255,0.2); margin-top: -1.5rem;">
+							:</div>
+						<div class="text-center">
+							<div id="minutes"
+								style="font-size: 3.5rem; font-weight: 900; color: var(--color-primary); line-height: 1; text-shadow: 0 0 20px rgba(204,255,0,0.4);">
+								00</div>
+							<div
+								style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: var(--color-white); margin-top: 0.5rem;">
+								Mins</div>
+						</div>
+						<div
+							style="font-size: 2.5rem; font-weight: 300; color: rgba(255,255,255,0.2); margin-top: -1.5rem;">
+							:</div>
+						<div class="text-center">
+							<div id="seconds"
+								style="font-size: 3.5rem; font-weight: 900; color: var(--color-white); line-height: 1;">
+								00</div>
+							<div
+								style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: var(--color-text-muted); margin-top: 0.5rem;">
+								Secs</div>
 						</div>
 					</div>
 				</div>
-			</section>
-			
-			<!-- Footer -->
-			 <footer id="footer"><div class="container">
-					<ul class="icons"><li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-					</ul></div>
-			</footer>
-			
-		
+			</div>
+		</div>
+	</section>
 
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/skel.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-	</body>
+	<!-- Talent Showcase (Trading Cards) -->
+	<section id="talent" class="section-py">
+		<div class="container">
+			<div class="flex-between mb-4">
+				<div>
+					<h2 class="mb-2">Trending <span style="color: var(--color-secondary);">Talent</span></h2>
+					<p>Top performing athletes this week.</p>
+				</div>
+				<a href="#" class="btn btn-outline">View Leaderboard</a>
+			</div>
+
+			<div class="grid card-perspective" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+				<!-- Card 1 -->
+				<div class="glass-card deal-card reveal-on-scroll" style="padding: 0;">
+					<div style="height: 250px; background: url('images/athlete/basketball.jpeg') center/cover;">
+						<div
+							style="width: 100%; height: 100%; background: linear-gradient(0deg, rgba(2,12,27,0.9) 0%, transparent 100%); display: flex; align-items: flex-end; padding: 1.5rem;">
+							<div>
+								<h3 style="margin-bottom: 0.2rem;">Alex Chen</h3>
+								<p style="margin: 0; color: var(--color-primary); font-size: 0.9rem;">Basketball • PG
+								</p>
+							</div>
+						</div>
+					</div>
+					<div style="padding: 1.5rem;">
+						<div class="flex-between mb-2" style="font-size: 0.9rem; color: var(--color-text-muted);">
+							<span>Age: 19</span>
+							<span>Points: 24.5 PPG</span>
+						</div>
+						<a href="#" class="btn btn-outline" style="width: 100%;">View Profile</a>
+					</div>
+				</div>
+
+				<!-- Card 2 -->
+				<div class="glass-card deal-card reveal-on-scroll" style="padding: 0;">
+					<div style="height: 250px; background: url('images/athlete/ffotball striker.jpg') center/cover;">
+						<div
+							style="width: 100%; height: 100%; background: linear-gradient(0deg, rgba(2,12,27,0.9) 0%, transparent 100%); display: flex; align-items: flex-end; padding: 1.5rem;">
+							<div>
+								<h3 style="margin-bottom: 0.2rem;">Sarah Miller</h3>
+								<p style="margin: 0; color: var(--color-secondary); font-size: 0.9rem;">Soccer • Striker
+								</p>
+							</div>
+						</div>
+					</div>
+					<div style="padding: 1.5rem;">
+						<div class="flex-between mb-2" style="font-size: 0.9rem; color: var(--color-text-muted);">
+							<span>Age: 17</span>
+							<span>Goals: 18</span>
+						</div>
+						<a href="#" class="btn btn-outline" style="width: 100%;">View Profile</a>
+					</div>
+				</div>
+
+				<!-- Card 3 -->
+				<div class="glass-card deal-card reveal-on-scroll" style="padding: 0;">
+					<div style="height: 250px; background: url('images/athlete/track.jpg') center/cover;">
+						<div
+							style="width: 100%; height: 100%; background: linear-gradient(0deg, rgba(2,12,27,0.9) 0%, transparent 100%); display: flex; align-items: flex-end; padding: 1.5rem;">
+							<div>
+								<h3 style="margin-bottom: 0.2rem;">Marcus Johnson</h3>
+								<p style="margin: 0; color: var(--color-primary); font-size: 0.9rem;">Track • 100m</p>
+							</div>
+						</div>
+					</div>
+					<div style="padding: 1.5rem;">
+						<div class="flex-between mb-2" style="font-size: 0.9rem; color: var(--color-text-muted);">
+							<span>Age: 21</span>
+							<span>Time: 10.2s</span>
+						</div>
+						<a href="#" class="btn btn-outline" style="width: 100%;">View Profile</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- How It Works Section -->
+	<section class="section-py" style="position: relative; overflow: hidden;">
+		<!-- Decorative Background Element -->
+		<div
+			style="position: absolute; top: 50%; left: 0; width: 100%; height: 1px; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent); transform: translateY(-50%);">
+		</div>
+
+		<div class="container">
+			<div class="text-center mb-4 reveal-on-scroll">
+				<h2 style="font-size: 2.5rem;">How to Join & <span class="hero-highlight">Win</span></h2>
+				<p>Your path to shining like a star starts here.</p>
+			</div>
+
+			<div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+				<!-- Step 1 -->
+				<div class="text-center reveal-on-scroll stagger-1" style="position: relative;">
+					<div
+						style="font-size: 6rem; font-weight: 900; color: rgba(255,255,255,0.03); line-height: 1; margin-bottom: -50px;">
+						01</div>
+					<div class="glass-card"
+						style="background: rgba(10,25,47,0.6); padding: 2rem; border: 1px solid rgba(204,255,0,0.2);">
+						<div
+							style="width: 60px; height: 60px; background: var(--color-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; box-shadow: 0 0 20px rgba(204,255,0,0.3);">
+							<i class="fas fa-user-plus" style="font-size: 1.5rem; color: var(--color-bg-darker);"></i>
+						</div>
+						<h3>Join Platform</h3>
+						<p style="font-size: 0.9rem;">Create your athlete account in seconds. It's free and built for
+							pros.</p>
+					</div>
+				</div>
+
+				<!-- Step 2 -->
+				<div class="text-center reveal-on-scroll stagger-2" style="position: relative;">
+					<div
+						style="font-size: 6rem; font-weight: 900; color: rgba(255,255,255,0.03); line-height: 1; margin-bottom: -50px;">
+						02</div>
+					<div class="glass-card"
+						style="background: rgba(10,25,47,0.6); padding: 2rem; border: 1px solid rgba(0,242,255,0.2);">
+						<div
+							style="width: 60px; height: 60px; background: var(--color-secondary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; box-shadow: 0 0 20px rgba(0,242,255,0.3);">
+							<i class="fas fa-check-circle"
+								style="font-size: 1.5rem; color: var(--color-bg-darker);"></i>
+						</div>
+						<h3>Verify Profile</h3>
+						<p style="font-size: 0.9rem;">Get the verified badge. Prove you are real and unlock scout
+							access.</p>
+					</div>
+				</div>
+
+				<!-- Step 3 -->
+				<div class="text-center reveal-on-scroll stagger-3" style="position: relative;">
+					<div
+						style="font-size: 6rem; font-weight: 900; color: rgba(255,255,255,0.03); line-height: 1; margin-bottom: -50px;">
+						03</div>
+					<div class="glass-card"
+						style="background: rgba(10,25,47,0.6); padding: 2rem; border: 1px solid rgba(255,255,255,0.2);">
+						<div
+							style="width: 60px; height: 60px; background: var(--color-white); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; box-shadow: 0 0 20px rgba(255,255,255,0.2);">
+							<i class="fas fa-video" style="font-size: 1.5rem; color: var(--color-bg-darker);"></i>
+						</div>
+						<h3>Share Moments</h3>
+						<p style="font-size: 0.9rem;">Post your best practice clips and achievements. Shine like a
+							star.</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- Parent & Organization Trust Section -->
+	<section class="section-py" style="background: var(--color-bg-darker);">
+		<div class="container">
+			<div class="text-center mb-4">
+				<h2 style="font-size: 2.5rem;">Trusted by <span
+						style="color: var(--color-white); border-bottom: 3px solid var(--color-primary);">Parents</span>
+					& Organizations</h2>
+				<p style="max-width: 600px; margin: 1rem auto;">Safe, secure, and professional. We provide the tools for
+					parents to manage valid athlete profiles and for organizations to find verified talent.</p>
+			</div>
+
+			<div class="feature-grid">
+				<!-- Feature 1 -->
+				<div class="glass-card text-center">
+					<i class="fas fa-shield-alt feature-icon"></i>
+					<h3>Parent Control</h3>
+					<p>Create and manage your child's profile with complete privacy controls. You decide who sees what.
+					</p>
+				</div>
+				<!-- Feature 2 -->
+				<div class="glass-card text-center">
+					<i class="fas fa-search feature-icon" style="color: var(--color-primary);"></i>
+					<h3>Verified Scouts</h3>
+					<p>Only verified coaches and organizations can contact athletes. Safety is our #1 priority.</p>
+				</div>
+				<!-- Feature 3 -->
+				<div class="glass-card text-center">
+					<i class="fas fa-chart-line feature-icon"></i>
+					<h3>Track Progress</h3>
+					<p>Upload stats, achievements, and practice videos to build a comprehensive athletic resume.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- CTA Footer -->
+	<footer class="main-footer">
+		<div class="container">
+			<h2 class="mb-4">Ready to enter the Arena?</h2>
+			<div class="flex-center" style="gap: 1.5rem; margin-bottom: 3rem;">
+				<a href="#" class="btn btn-primary">Join Athlete Waitlist</a>
+				<a href="#" class="btn btn-outline">Coach/Org Pre-Register</a>
+			</div>
+
+			<div class="grid"
+				style="grid-template-columns: repeat(4, 1fr); text-align: left; gap: 2rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 3rem;">
+				<div>
+					<h4 style="color: var(--color-white);">AmaPlayer</h4>
+					<p style="font-size: 0.9rem;">Connecting the world of sports.</p>
+				</div>
+				<div>
+					<h4>Platform</h4>
+					<ul style="opacity: 0.7; font-size: 0.9rem; line-height: 2;">
+						<li><a href="#">Athletes</a></li>
+						<li><a href="coaches.html">Coaches</a></li>
+						<li><a href="organizations.html">Organizations</a></li>
+					</ul>
+				</div>
+				<div>
+					<h4>Support</h4>
+					<ul style="opacity: 0.7; font-size: 0.9rem; line-height: 2;">
+						<li><a href="#">Help Center</a></li>
+						<li><a href="#">Safety</a></li>
+						<li><a href="#">Terms of Service</a></li>
+					</ul>
+				</div>
+				<div>
+					<h4>Connect</h4>
+					<div class="flex" style="gap: 1rem; font-size: 1.2rem;">
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-facebook"></i></a>
+					</div>
+				</div>
+			</div>
+			<p style="margin-top: 3rem; font-size: 0.8rem; opacity: 0.5;">&copy; 2025 AmaPlayer. All rights reserved.
+			</p>
+		</div>
+	</footer>
+
+	<!-- Minimal Scripts -->
+	<script src="assets/js/main.js"></script>
+</body>
+
 </html>

@@ -1,189 +1,128 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Meet the Coaches - AmaPlayer</title>
-		<meta charset="utf-8">
-		<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="assets/css/main.css">
-	</head>
-	<body>
+<!DOCTYPE html>
+<html lang="en">
 
-		<!-- Header -->
-			<header id="header" class="alt">
-				<div class="logo"><a href="index.html">Hello <span>by AmaPlayer</span></a></div>
-				<a href="#menu">Menu</a>
-			</header>
-			
-			<!-- Nav -->
-			 <nav id="menu">
-				<ul class="links">
-					<li><a href="index.html">Home</a></li>
-					
-					<li><a href="coaches.html">Coaches</a></li>
-					<li><a href="organizations.html">Organizations</a></li>
-				</ul> 
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Meet the Coaches - AmaPlayer</title>
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+	<!-- Header -->
+	<header class="main-header flex-center">
+		<div class="container flex-between">
+			<div class="logo">
+				<a href="index.html"
+					style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 900; color: var(--color-white);">
+					AMA<span style="color: var(--color-primary);">PLAYER</span>
+				</a>
+			</div>
+			<nav class="nav-links desktop-only" style="display: flex; gap: 2rem;">
+				<a href="index.html">Home</a>
+				<a href="coaches.html" class="active">Coaches</a>
+				<a href="organizations.html">Organizations</a>
+				<a href="index.html#talent">Talent</a>
 			</nav>
-				
-			<!-- Banner -->
-			<section class="banner full">
-				<article>
-					<img src="images/coaches.jpg" alt="Coaches Banner" width="1440" height="961">
-					<div class="inner">
-						<header>
-							<p>Professional Guidance for Athletes</p>
-							<h2>Meet the Coaches</h2>
-							<div class="hero-buttons">
-								<a href="#coaches" class="button special">Explore Coaches</a>
-								<a href="#" class="button alt">Login</a>
-							</div>
-						</header>
-					</div>
-				</article>
+			<div class="auth-buttons flex" style="gap: 1rem;">
+				<a href="#" class="btn btn-primary" style="padding: 0.5rem 1.5rem; font-size: 0.8rem;">Join Waitlist</a>
+			</div>
+		</div>
+	</header>
 
-				<article>
-					<img src="images/training.jpg" alt="Training Session" width="1440" height="961">
-					<div class="inner">
-						<header>
-							<p>Expert Training Programs</p>
-							<h2>Elevate Your Game</h2>
-							<div class="hero-buttons">
-								<a href="#coaches" class="button special">View Programs</a>
-								<a href="#" class="button alt">Login</a>
-							</div>
-						</header>
-					</div>
-				</article>
+	<!-- Mini Hero -->
+	<section class="hero-wrapper" style="min-height: 50vh;">
+		<div
+			style="position: absolute; top:0; left:0; width:100%; height:100%; background: url('images/coaches.jpg') center/cover no-repeat; opacity: 0.4; z-index: 0;">
+		</div>
+		<div
+			style="position: absolute; top:0; left:0; width:100%; height:100%; background: linear-gradient(180deg, rgba(10,25,47,0.7) 0%, var(--color-bg-dark) 100%); z-index: 1;">
+		</div>
 
-				<article data-position="center bottom">
-					<img src="images/success.jpg" alt="Success Stories" width="1440" height="962">
-					<div class="inner">
-						<header>
-							<p>Join Our Winning Team</p>
-							<h2>Start Your Journey Today</h2>
-							<div class="hero-buttons">
-								<a href="#coaches" class="button special">Get Started</a>
-								<a href="#" class="button alt">Login</a>
-							</div>
-						</header>
-					</div>
-				</article>
-			</section>
-                
-            <!-- Coaches Section -->
-            <section id="coaches" class="wrapper style2">
-                <div class="inner">
-					<header class="align-center">
-						<h2>Our Expert Coaching Staff</h2>
-						<p>Discover top coaches, mentors, and trainers driving athlete progress across all sports</p>
-					</header>
-					<div class="coaches-grid">
-						<div class="coach-profile">
-							<div class="coach-image">
-								<img src="images/pic01.jpg" alt="Coach Profile">
-							</div>
-							<div class="coach-info">
-								<h3>Sarah Johnson</h3>
-								<p class="specialty">Basketball Coach</p>
-								<p>15+ years of experience coaching professional basketball. Former WNBA player with expertise in player development and team strategy.</p>
-								<div class="achievements">
-									<span class="achievement">3x Championship Winner</span>
-									<span class="achievement">Olympic Trainer</span>
-								</div>
-							</div>
+		<div class="container hero-content text-center">
+			<h1 style="font-size: 3rem;">Expert <span class="hero-highlight">Coaching</span> Staff</h1>
+			<p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto; color: #e6f1ff;">
+				Train with the best. Discover top coaches driving athlete progress across all sports.
+			</p>
+		</div>
+	</section>
+
+	<!-- Coaches Grid -->
+	<section class="section-py">
+		<div class="container">
+			<div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem;">
+
+				<!-- Coach 1 -->
+				<div class="glass-card" style="padding: 0;">
+					<div style="height: 300px; background: url('images/coaches/baldivya.png') center/cover;"></div>
+					<div style="padding: 2rem;">
+						<h3 class="mb-2">Baldivya Kumar</h3>
+						<p style="color: var(--color-primary); font-weight: 600;">Basketball Coach</p>
+						<p>15+ years of experience coaching professional basketball. Former WNBA player strategies.</p>
+						<div class="flex" style="flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem;">
+							<span
+								style="font-size: 0.8rem; background: rgba(255,255,255,0.1); padding: 0.2rem 0.8rem; border-radius: 20px;">3x
+								Champion</span>
+							<span
+								style="font-size: 0.8rem; background: rgba(255,255,255,0.1); padding: 0.2rem 0.8rem; border-radius: 20px;">Olympic
+								Trainer</span>
 						</div>
-
-						<div class="coach-profile">
-							<div class="coach-image">
-								<img src="images/pic02.jpg" alt="Coach Profile">
-							</div>
-							<div class="coach-info">
-								<h3>Michael Rodriguez</h3>
-								<p class="specialty">Soccer Coach</p>
-								<p>International soccer coach with experience in youth development and professional leagues. Specialized in technical skills and tactical awareness.</p>
-								<div class="achievements">
-									<span class="achievement">Youth Development Expert</span>
-									<span class="achievement">FIFA Licensed</span>
-								</div>
-							</div>
-						</div>
-
-						<div class="coach-profile">
-							<div class="coach-image">
-								<img src="images/pic03.jpg" alt="Coach Profile">
-							</div>
-							<div class="coach-info">
-								<h3>Emma Thompson</h3>
-								<p class="specialty">Swimming Coach</p>
-								<p>Elite swimming coach with a track record of developing Olympic-level athletes. Focuses on technique refinement and performance optimization.</p>
-								<div class="achievements">
-									<span class="achievement">Olympic Coach</span>
-									<span class="achievement">Technical Specialist</span>
-								</div>
-							</div>
-						</div>
-
-						<div class="coach-profile">
-							<div class="coach-image">
-								<img src="images/pic04.jpg" alt="Coach Profile">
-							</div>
-							<div class="coach-info">
-								<h3>David Chen</h3>
-								<p class="specialty">Tennis Coach</p>
-								<p>Professional tennis coach with expertise in junior development and adult coaching. Former ATP tour player with deep understanding of the game.</p>
-								<div class="achievements">
-									<span class="achievement">Junior Development</span>
-									<span class="achievement">Former Pro Player</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="align-center" style="margin: 40px 0;">
-						<a href="#" class="button special big join-coaches-btn">Join the Coaches</a>
+						<a href="#" class="btn btn-outline" style="width: 100%; margin-top: 1.5rem;">View Profile</a>
 					</div>
 				</div>
-			</section>
 
-			<!-- Coaching Philosophy Section -->
-			<section id="philosophy" class="wrapper style3">
-				<div class="inner">
-					<header class="align-center">
-						<p>Our Approach to Athletic Development</p>
-						<h2>Coaching Philosophy</h2>
-					</header>
-					<div class="philosophy-content">
-						<div class="philosophy-item">
-							<h3>Individual Development</h3>
-							<p>We believe every athlete is unique. Our coaches create personalized training programs that address individual strengths, weaknesses, and goals.</p>
+				<!-- Coach 2 -->
+				<div class="glass-card" style="padding: 0;">
+					<div style="height: 300px; background: url('images/coaches/rodrigueg.png') center/cover;"></div>
+					<div style="padding: 2rem;">
+						<h3 class="mb-2">Michael Rodriguez</h3>
+						<p style="color: var(--color-secondary); font-weight: 600;">Soccer Coach</p>
+						<p>International soccer coach specialized in technical skills and tactical awareness for youth.
+						</p>
+						<div class="flex" style="flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem;">
+							<span
+								style="font-size: 0.8rem; background: rgba(255,255,255,0.1); padding: 0.2rem 0.8rem; border-radius: 20px;">FIFA
+								Licensed</span>
+							<span
+								style="font-size: 0.8rem; background: rgba(255,255,255,0.1); padding: 0.2rem 0.8rem; border-radius: 20px;">Youth
+								Expert</span>
 						</div>
-						<div class="philosophy-item">
-							<h3>Mental Preparation</h3>
-							<p>Physical skills are only part of the equation. We focus on building mental resilience, confidence, and competitive mindset.</p>
-						</div>
-						<div class="philosophy-item">
-							<h3>Long-term Growth</h3>
-							<p>We're committed to sustainable development that prioritizes athlete health and longevity in their chosen sport.</p>
-						</div>
+						<a href="#" class="btn btn-outline" style="width: 100%; margin-top: 1.5rem;">View Profile</a>
 					</div>
 				</div>
-			</section>
-			
-			<!-- Footer -->
-			 <footer id="footer"><div class="container">
-					<ul class="icons"><li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-					</ul></div>
-			</footer>
-			
-		
 
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/skel.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-	</body>
+				<!-- Coach 3 -->
+				<div class="glass-card" style="padding: 0;">
+					<div style="height: 300px; background: url('images/coaches/swimming.png') center/cover;"></div>
+					<div style="padding: 2rem;">
+						<h3 class="mb-2">Poonam Singh</h3>
+						<p style="color: var(--color-primary); font-weight: 600;">Swimming Coach</p>
+						<p>Elite swimming coach with a track record of developing Olympic-level athletes.</p>
+						<div class="flex" style="flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem;">
+							<span
+								style="font-size: 0.8rem; background: rgba(255,255,255,0.1); padding: 0.2rem 0.8rem; border-radius: 20px;">Olympic
+								Coach</span>
+							<span
+								style="font-size: 0.8rem; background: rgba(255,255,255,0.1); padding: 0.2rem 0.8rem; border-radius: 20px;">Tech
+								Specialist</span>
+						</div>
+						<a href="#" class="btn btn-outline" style="width: 100%; margin-top: 1.5rem;">View Profile</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="main-footer">
+		<div class="container">
+			<p style="font-size: 0.8rem; opacity: 0.5;">&copy; 2024 AmaPlayer. All rights reserved.</p>
+		</div>
+	</footer>
+
+	<script src="assets/js/main.js"></script>
+</body>
+
 </html>
